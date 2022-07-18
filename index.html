@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- HEADER -->
+    <!----------------------- HEADER ----------------->
 
     <header class="header">
       <div class="container heder-container">
@@ -50,18 +50,18 @@
         </ul>
       </div>
     </header>
-    <!-- MAIN -->
+    <!--------------------------- MAIN ----------------->
 
     <main>
-      <!-- HERO -->
+      <!------------------------- HERO ----------------->
       <section class="hero-section">
         <div class="container">
           <h1 class="hero-text">Эфективные решения <br />для вашего бизнеса</h1>
-          <button type="button" class="hero-button">Заказать услугу</button>
+          <button data-modal-open type="button" class="hero-button">Заказать услугу</button>
         </div>
       </section>
 
-      <!-- Превосходства -->
+      <!----------------------- Превосходства --------------->
       <section class="section">
         <div class="container">
           <ul class="advanteges-list">
@@ -117,19 +117,28 @@
         </div>
       </section>
 
-      <!-- Чем занимаемся -->
+      <!----------------- Чем занимаемся ---------------->
       <section class="section work">
         <div class="container">
           <h2 class="info-heading">Чем мы занимаемся</h2>
           <ul class="info-link">
-            <li><img src="images/box1.jpg" alt="Дизайн" width="370" /></li>
-            <li><img src="images/box2.jpg" alt="Мобильные приложения" width="370" /></li>
-            <li><img src="images/box3.jpg" alt="Создание сайта" width="370" /></li>
+            <li class="work-thumb">
+              <img src="images/box1.jpg" alt="Десктопные приложения" width="370" />
+              <h3 class="work-describe">Десктопные приложения</h3>
+            </li>
+            <li class="work-thumb">
+              <img src="images/box2.jpg" alt="Мобильные приложения" width="370" />
+              <h3 class="work-describe">Мобильные приложения</h3>
+            </li>
+            <li class="work-thumb">
+              <img src="images/box3.jpg" alt="Дизайн сайта" width="370" />
+              <h3 class="work-describe">Дизайнерские решения</h3>
+            </li>
           </ul>
         </div>
       </section>
 
-      <!-- Команда сотрудников -->
+      <!---------------- Команда сотрудников --------------->
       <section class="section bgc">
         <div class="container">
           <h2 class="info-heading">Наша команда</h2>
@@ -144,7 +153,7 @@
                 <ul class="team-sotial">
                   <li>
                     <a href="#" class="sotial-box">
-                      <svg class="team-svg-hover team-svg" width="20" height="20">
+                      <svg class="team-svg" width="20" height="20">
                         <use href="./images/symbol-defs.svg#icon-instagram"></use>
                       </svg>
                     </a>
@@ -335,9 +344,15 @@
           </ul>
         </div>
       </section>
+
+      <!----------------MМОДАЛЬНОЕ ОКНО --------------->
+      <div class="backdrop is-hidden" data-backdrop>
+        <div class="modal"></div>
+        <button data-modal-close close></button>
+      </div>
     </main>
 
-    <!-- FOOTER -->
+    <!--------------------- FOOTER --------------->
 
     <footer class="background-footer footer-list">
       <div class="container footer-items">
@@ -391,5 +406,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

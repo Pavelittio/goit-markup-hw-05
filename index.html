@@ -346,9 +346,13 @@
       </section>
 
       <!----------------MМОДАЛЬНОЕ ОКНО --------------->
-      <div class="backdrop is-hidden" data-backdrop>
-        <div class="modal"></div>
-        <button data-modal-close close></button>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+        <button data-modal-close class="close-button">
+          <svg width="11" height="11">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
       </div>
     </main>
 

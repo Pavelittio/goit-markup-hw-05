@@ -610,7 +610,7 @@ ul {
     top: 0px;
     background: rgba(0, 0, 0, 0.2);
     opacity: 1;
-    transition: opaciti 250ms linear;   
+    transition: opaciti 250ms cubic-bezier(0.4, 0, 0.2, 1);   
 }
 .backdrop.is-hidden{
     opacity: 0.5;
@@ -631,3 +631,17 @@ ul {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 }
+
+.close-button{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+}
+
